@@ -17,6 +17,9 @@
 
 </head>
 <body>
+    <div class="loader_bg">
+    <div class="loader"></div>
+    </div>
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
@@ -254,7 +257,11 @@
     <footer>
         <span> Design by <a href="#">Hayme Co</a> | <span class="far fa-copyright"></span>2019 - <script>document.write(new Date().getFullYear());</script> All rights reserved.</span>
     </footer>
-
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
